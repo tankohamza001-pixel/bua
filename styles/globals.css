@@ -1,42 +1,140 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
+/* ===== GLOBAL FONT & BODY ===== */
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa; /* light gray background */
+  color: #212529; /* default text color */
   margin: 0;
+  padding: 0;
 }
 
+/* ===== HEADINGS ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #0d6efd; /* Bootstrap primary color */
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+/* ===== PARAGRAPHS ===== */
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ===== LINKS ===== */
 a {
-  color: inherit;
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+a:hover {
+  text-decoration: underline;
+  color: #0a58ca;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  border-radius: 0.3rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== CARDS ===== */
+.card {
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* ===== HERO SECTION ===== */
+.hero-section {
+  background-color: #e9f5ff;
+  padding: 100px 0;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+}
+
+/* ===== ABOUT / PROGRAMS / TEACHERS SECTIONS ===== */
+section {
+  padding: 60px 0;
+}
+
+section.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+/* ===== CONTACT FORM ===== */
+form input, form textarea {
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13,110,253,.25);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #212529;
+  color: #f8f9fa;
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* ===== RESPONSIVE SPACING ===== */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 20px;
   }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+/* Active link highlight */
+.navbar-nav .active-link {
+  font-weight: 600;
+  color: #0d6efd !important;
+  border-bottom: 2px solid #0d6efd;
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+  color: #0a58ca !important;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* Smooth collapse slide (mobile) */
+.navbar-collapse.collapse {
+  transition: all 0.3s ease;
 }
