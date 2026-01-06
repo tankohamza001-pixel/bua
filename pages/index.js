@@ -66,9 +66,9 @@ export default function Home() {
             <div className="col-md-3 mb-4">
               <div className="card h-100 shadow-sm text-center">
                 <img
-                  src="/teacher1.jpg"
+                  src="/1.jpg"
                   className="card-img-top"
-                  alt="Teacher 1"
+                  alt="1"
                 />
                 <div className="card-body">
                   <h5 className="card-title">Uncle Muhammad Harande</h5>
@@ -79,9 +79,9 @@ export default function Home() {
             <div className="col-md-3 mb-4">
               <div className="card h-100 shadow-sm text-center">
                 <img
-                  src="/teacher2.jpg"
+                  src="/2.jpg"
                   className="card-img-top"
-                  alt="Teacher 2"
+                  alt="2"
                 />
                 <div className="card-body">
                   <h5 className="card-title">Uncle Abdulrahman Auwal</h5>
@@ -92,9 +92,9 @@ export default function Home() {
             <div className="col-md-3 mb-4">
               <div className="card h-100 shadow-sm text-center">
                 <img
-                  src="/teacher3.jpg"
+                  src="/3.jpg"
                   className="card-img-top"
-                  alt="Teacher 3"
+                  alt="3"
                 />
                 <div className="card-body">
                   <h5 className="card-title">Mommy Brilliant </h5>
@@ -105,9 +105,9 @@ export default function Home() {
             <div className="col-md-3 mb-4">
               <div className="card h-100 shadow-sm text-center">
                 <img
-                  src="/teacher4.jpg"
+                  src="/4.jpg"
                   className="card-img-top"
-                  alt="Teacher 4"
+                  alt="4"
                 />
                 <div className="card-body">
                   <h5 className="card-title">Uncle Hamza ismail</h5>
